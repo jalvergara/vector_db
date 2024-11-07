@@ -1,0 +1,10 @@
+services:
+  db:
+    image: pgvector/pgvector:pg17
+    container_name: class-pgvector
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - 5433:5432
